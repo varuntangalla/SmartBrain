@@ -4,10 +4,10 @@ import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
+import Rank from './components/Rank/Rank'
 import Logo from './components/Logo/Logo';
 import Register from './components/Register/Register';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
-import Rank from './components/Rank/Rank';
 import './App.css';
 import 'tachyons';
 
@@ -46,7 +46,7 @@ class App extends Component {
 
       box: {},
 
-      route: 'signin',
+      route: 'Signin',
 
       isSignedIn: false
 
@@ -78,7 +78,7 @@ class App extends Component {
   displayFaceBox = (box) => {
 
 
-      console.log(box);
+      
       this.setState({box: box});
 
   }
